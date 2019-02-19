@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <Router>
           <div className="container main">
-            <BootstrapNavBar />
+            <Route path="/" render={()=><BootstrapNavBar/>}/>
 
             <Route exact path="/" render={()=><Home/>} />
             <Route path="/about" render={()=><About/>}/>
