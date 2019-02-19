@@ -5,3 +5,8 @@
 .main{
   margin-top: 100px;
 }
+
+.galleryImage {
+  width: 100%;
+  max-width: 30rem;
+}

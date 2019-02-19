@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class About extends Component {
+class Weather extends Component {
 	constructor(props) {
 		super(props);
 		this.state={
@@ -14,12 +14,12 @@ class About extends Component {
 
 	componentDidMount() {
 		var url = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&zip=30305,us&appid=482c145ce8edf1d69ea5168f9d06460c';
-		$.getJSON(url, (weatherData) =>{
-			console.log(weatherData);
-			this.setState({
+		// $.getJSON(url, (weatherData) =>{
+		// 	console.log(weatherData);
+		// 	this.setState({
 
-			})
-		});
+		// 	})
+		// });
 	}
 
 	render(){
@@ -32,4 +32,4 @@ class About extends Component {
 	}
 }
 
-export default About;
+export default Weather;
